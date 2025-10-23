@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -59,12 +60,14 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
                 .padding(12.dp)
                 .background(
-                    brush = Brush.linearGradient(
+                    brush = Brush.radialGradient(
                         colors = listOf(
-                            Color(0xFFFF4777),
-                            Color(0xFF36434A),
-                            Color(0xFFE5D4C8)
-                        )
+                            Color(0xFF53589A),
+                            Color(0xFF45455B),
+                            Color(0xFFEFEFEF)
+                        ),
+                        center = Offset(400f, 400f),
+                        radius = 1200f
                     ),
                     shape = RoundedCornerShape(16.dp)
                 )
