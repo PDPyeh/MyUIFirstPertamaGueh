@@ -110,7 +110,14 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             }
         }
         Box(
-
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp)
+                .background(
+                    color = Color.Blue,
+                    shape = RoundedCornerShape(16.dp)
+                )
+                .clip(RoundedCornerShape(16.dp))
         )
     }
 }
