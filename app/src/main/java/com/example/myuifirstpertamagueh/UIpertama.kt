@@ -203,6 +203,14 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                             color = Color.Black,
                             modifier = Modifier.padding(top = 5.dp)
                         )
+                        Text(
+                            text = stringResource(id = R.string.alamat3),
+                            fontSize = 18.sp,
+                            fontFamily = SFProDisplay,
+                            color = Color.Yellow,
+                            modifier = Modifier.padding(top = 8.dp, bottom = 10.dp)
+                        )
+
 
 
                     }
