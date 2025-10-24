@@ -162,6 +162,10 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
 
                 }
             }
+        }
+        Box(
+
+        )
     }
 }
 
