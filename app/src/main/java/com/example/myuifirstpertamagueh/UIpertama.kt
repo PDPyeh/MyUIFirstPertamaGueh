@@ -177,8 +177,18 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
-            )
-    }
+            ) {
+                Row(modifier = Modifier.padding(8.dp)) {
+                    val gambar = painterResource(id = R.drawable.huto)
+                    Image(
+                        painter = gambar,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(100.dp)
+                            .padding(5.dp)
+                    )
+
+                }
 }
 
 
