@@ -133,6 +133,17 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                             .size(100.dp)
                             .padding(5.dp)
                     )
+                    Spacer(modifier = Modifier.width(30.dp))
+                    Column{
+                        Text(
+                            text = stringResource(id = R.string.nama2),
+                            fontSize = 28.sp,
+                            fontFamily = SFProDisplay,
+                            color = Color.White,
+                            modifier = Modifier.padding(top = 10.dp)
+                        )
+
+                    }
 
                 }
             }
