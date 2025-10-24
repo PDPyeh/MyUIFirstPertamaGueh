@@ -118,7 +118,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(16.dp)
                 )
                 .clip(RoundedCornerShape(16.dp))
-        ){
+        ) {
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(containerColor = Color.Transparent),
@@ -134,7 +134,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                             .padding(5.dp)
                     )
                     Spacer(modifier = Modifier.width(30.dp))
-                    Column{
+                    Column {
                         Text(
                             text = stringResource(id = R.string.nama2),
                             fontSize = 28.sp,
@@ -212,10 +212,24 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                         )
 
 
-
                     }
 
                 }
+            }
+        }
+    }
+    Spacer(modifier = Modifier.height(20.dp))
+
+    Box(modifier = Modifier.fillMaxSize()) {
+        Text(
+            text = stringResource(id = R.string.copy),
+            fontFamily = SFProDisplay,
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 50.dp)
+        )
+
+    }
 }
 
 
