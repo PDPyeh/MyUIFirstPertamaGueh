@@ -41,6 +41,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             .padding(top = 100.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // Header
         Text(
             text = stringResource(id = R.string.prodi),
             fontSize = 32.sp,
@@ -54,6 +55,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.height(25.dp))
+
 
         Box(
             modifier = Modifier
@@ -78,9 +80,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 colors = CardDefaults.cardColors(containerColor = Color.Transparent),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
             ) {
-                Row(
-                    modifier = Modifier.padding(8.dp)
-                ) {
+                Row(modifier = Modifier.padding(8.dp)) {
                     val gambar = painterResource(id = R.drawable.huto)
                     Image(
                         painter = gambar,
@@ -110,18 +110,6 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             }
         }
 
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-        ) {
-            Text(
-                text = stringResource(id = R.string.copy),
-                fontFamily = SFProDisplay,
-                modifier = Modifier
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-            )
-        }
     }
 }
 
