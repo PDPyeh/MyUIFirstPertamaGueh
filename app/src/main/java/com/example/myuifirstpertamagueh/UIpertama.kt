@@ -172,7 +172,12 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(16.dp)
                 )
                 .clip(RoundedCornerShape(16.dp))
-        )
+        ) {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(containerColor = Color.Transparent),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            )
     }
 }
 
